@@ -1,2 +1,14 @@
-# TacticsRPGTutorial
-Code for a Unity Tactics RPG Game
+# RTS-Tutorial-Code
+The code for my Tactics RPG video tutorials.
+
+This code is broken up by video so you can compare and debug more efficiently. Code is added as I record videos so there may be code here for videos that haven't be released yet.
+
+This code isn't perfect and is constantly being changed so if you encounter any bugs or have any questions, comments, or suggestions please feel free to reach out to me on Twitter or Discord. You can also email me at:
+
+seriousgooseproductions@gmail.com
+
+I hope this code is useful for you. Good luck!
+
+-Alex
+
+Last Update: 9/6/2025
