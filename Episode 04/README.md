@@ -1,4 +1,4 @@
-# Episode 3: Unit Movement
+# Episode 4: Unit Movement
 
 In this video we make our unit move to a tile when we select the tile.
 
