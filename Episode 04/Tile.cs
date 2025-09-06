@@ -12,18 +12,20 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
     private Renderer tileRenderer;
     public static Tile selectedTile;
-    public bool inMoveRange = false;
 
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         tileRenderer = GetComponentInChildren<Renderer>();
     }
 
+    // Changes the color of this tile
     public void ChangeColor(Color newColor)
     {
         tileRenderer.material.color = newColor;
     }
 
+    // Called when the pointer first hovers over an object, adds the highlight to this tile
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (selectedTile != this)
@@ -32,32 +34,17 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         }
     }
 
+    // Called when the pointer stops hovering over an object, removes the highlight from this tile
     public void OnPointerExit(PointerEventData eventData)
     {
         if (selectedTile != this)
         {
-            ChangeColor(inMoveRange? Color.cyan : originalColor);
+            ChangeColor(originalColor);
         }
     }
 
+    // Called when the mouse is clicked, selects this tile and moves a unit to it
     public void OnPointerDown(PointerEventData eventData)
-    {
-        SelectTile();
-
-        if (Player.selectedUnit)
-        {
-            if (inMoveRange)
-            {
-                Player.selectedUnit.MoveTo(transform.position, gridPosition);
-            }
-            else
-            {
-                Player.selectedUnit = null;
-            }
-        }
-    }
-
-    private void SelectTile()
     {
         if (selectedTile)
         {
@@ -66,5 +53,7 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
 
         selectedTile = this;
         ChangeColor(selectedColor);
+
+        FindAnyObjectByType<Unit>().MoveTo(transform.position, gridPosition);
     }
 }

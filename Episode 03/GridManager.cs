@@ -20,7 +20,7 @@ public class GridManager : MonoBehaviour
         GenerateGrid();
     }
 
-    //Instantiates a grid of tiles with a checkerboard pattern
+    // Instantiates a grid of tiles with a checkerboard pattern
     public void GenerateGrid()
     {
         for(int x = 0; x<width; x++)
@@ -38,9 +38,9 @@ public class GridManager : MonoBehaviour
 
                 Tile tileScript = tile.GetComponent<Tile>();
                 tileScript.gridPosition = new Vector2Int(x, y);
+                tileScript.originalColor = renderer.material.color;
                 map[x, y] = tileScript;
             }
         }
     }
 }
-
