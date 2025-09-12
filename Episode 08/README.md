@@ -1,6 +1,6 @@
-# Episode 6: Unit Selection
+# Episode 8: Tile Occupancy
 
-In this video we adjust our code to allow us to select a unit and move it according to its movement range.
+In this video we add occupancy to our tiles so that our units won't be able to pile on top of each other.
 
 ## Edited Scripts
 - Tile.cs
