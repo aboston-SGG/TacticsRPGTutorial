@@ -1,6 +1,6 @@
 # Episode 2: Grid Instantiation
 
-In this video we write our first bit of code and instantiate a grid of tiles at runtime.
+In this [video](https://youtu.be/QkTLsIb23MQ) we write our first bit of code and instantiate a grid of tiles at runtime.
 
 ## New Scripts
 - Tile.cs

@@ -1,6 +1,6 @@
 # Episode 3: Grid Interaction
 
-In this video we make our grid of tiles interactive with highlighting and selection.
+In this [video](https://youtu.be/CF15E-jLx98) we make our grid of tiles interactive with highlighting and selection.
 
 ## Edited Scripts
 - Tile.cs
