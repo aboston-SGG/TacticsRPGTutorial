@@ -1,6 +1,6 @@
 # Episode 4: Unit Movement
 
-In this video we make our unit move to a tile when we select the tile.
+In this [video](https://youtu.be/h7F8fo6llZ4) we make our unit move to a tile when we select the tile.
 
 ## New Scripts
 - Unit.cs
