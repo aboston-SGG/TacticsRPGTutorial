@@ -1,6 +1,6 @@
 # Episode 8: Tile Occupancy
 
-In this video we add occupancy to our tiles so that our units won't be able to pile on top of each other.
+In this [video](https://youtu.be/5fBNOJu_6WI) we add occupancy to our tiles so that our units won't be able to pile on top of each other.
 
 ## Edited Scripts
 - Tile.cs

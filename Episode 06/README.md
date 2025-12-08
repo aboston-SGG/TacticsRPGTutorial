@@ -1,6 +1,6 @@
 # Episode 6: Unit Selection
 
-In this video we adjust our code to allow us to select a unit and move it according to its movement range.
+In this [video](https://youtu.be/_TARgDdVWhA) we adjust our code to allow us to select a unit and move it according to its movement range.
 
 ## New Scripts
 - Player.cs

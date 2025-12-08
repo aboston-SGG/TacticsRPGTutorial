@@ -1,6 +1,6 @@
 # Episode 11: Attack Range
 
-In this video we add another pass of our Dijkstra's algorithm to display our attack range.
+In this [video](https://youtu.be/K_kJBpwPhRU) we add another pass of our Dijkstra's algorithm to display our attack range.
 
 ## Edited Scripts
 - GridManager.cs

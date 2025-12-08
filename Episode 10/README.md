@@ -1,6 +1,6 @@
 # Episode 10: Unit Stats
 
-In this video we add a struct to store some stats that will change how effective our units will be.
+In this [video](https://youtu.be/vdMQQmClFVM) we add a struct to store some stats that will change how effective our units will be.
 
 ## New Scripts
 - UnitStats.cs

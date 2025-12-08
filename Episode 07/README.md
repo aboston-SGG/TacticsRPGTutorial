@@ -1,6 +1,6 @@
 # Episode 7: Terrain Costs
 
-In this video we add terrain costs to our map generation and movement range.
+In this [video](https://youtu.be/_38ZHCKlnsE) we add terrain costs to our map generation and movement range.
 
 ## Edited Scripts
 - Tile.cs

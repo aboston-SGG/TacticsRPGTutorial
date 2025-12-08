@@ -1,6 +1,6 @@
 # Episode 15: Attacking
 
-In this video we give our units the ability to attack, breaking our auto-positioning in the process.
+In this [video](https://youtu.be/WYMHqDmTwtw) we give our units the ability to attack, breaking our auto-positioning in the process.
 
 ## Edited Scripts
 - GridManager.cs

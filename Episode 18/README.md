@@ -1,6 +1,6 @@
-# Episode 17: Enemy Attack
+# Episode 18: Enemy Attack
 
-In this video we expand our enemy AI by allowing it to attack with its units.
+In this [video](https://youtu.be/6srKxqvC8Qc) we expand our enemy AI by allowing it to attack with its units.
 
 ## Edited Scripts
 - PlayerAI.cs

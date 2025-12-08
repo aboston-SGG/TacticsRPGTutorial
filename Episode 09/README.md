@@ -1,6 +1,6 @@
 # Episode 9: A* Pathfinding
 
-In this video use the A* pathfinding algorithm to make our units follow the shortest path to get to their desitination instead fo just gliding right to it.
+In this [video](https://youtu.be/odZv9u_cgHI) use the A* pathfinding algorithm to make our units follow the shortest path to get to their desitination instead fo just gliding right to it.
 
 ## Edited Scripts
 - Tile.cs

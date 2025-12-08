@@ -1,6 +1,6 @@
 # Episode 12: Movement Limitation
 
-In this video we limit our unit movement so they can't move infinitely in a turn.
+In this [video](https://youtu.be/XY9O2lCr83k) we limit our unit movement so they can't move infinitely in a turn.
 
 ## Edited Scripts
 - Unit.cs

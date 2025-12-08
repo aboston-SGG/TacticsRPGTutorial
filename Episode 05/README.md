@@ -1,6 +1,6 @@
 # Episode 5: Movement Range
 
-In this video we use Dijkstra's algorithm to determine which tiles we can move to, and highlight them accordingly.
+In this [video](https://youtu.be/Fa6W8R0LH4c) we use Dijkstra's algorithm to determine which tiles we can move to, and highlight them accordingly.
 
 ## Edited Scripts
 - Tile.cs

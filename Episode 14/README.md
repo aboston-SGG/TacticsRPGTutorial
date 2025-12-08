@@ -1,6 +1,6 @@
 # Episode 14: Auto-Positioning
 
-In this video we make it so that our units can move to an ideal position to attack an enemy.
+In this [video](https://youtu.be/oPwtyJjw8aU) we make it so that our units can move to an ideal position to attack an enemy.
 
 ## Edited Scripts
 - Player.cs

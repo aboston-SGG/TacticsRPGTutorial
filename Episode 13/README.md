@@ -1,6 +1,6 @@
 # Episode 13: Turn Management
 
-In this video we add turns to our project and some simple UI management.
+In this [video](https://youtu.be/1x2D1Tcm0gY) we add turns to our project and some simple UI management.
 
 ## New Scripts
 - TurnManager.cs

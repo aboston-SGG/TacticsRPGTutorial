@@ -1,6 +1,6 @@
 # Episode 17: Enemy Movement
 
-In this video we start our enemy AI by allowing it to move units around on its turn.
+In this [video](https://youtu.be/YDn8P5vo5x0) we start our enemy AI by allowing it to move units around on its turn.
 
 ## New Scripts
 - PlayerAI.cs
