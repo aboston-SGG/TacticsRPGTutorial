@@ -53,6 +53,7 @@ public struct UnitStats
         return Mathf.Round(Random.Range(min, max));
     }
 
+    // Increases a stat based on given growths
     private void ApplyGrowth(ref float stat, float growth, float rand)
     {
         if(growth > 1f)

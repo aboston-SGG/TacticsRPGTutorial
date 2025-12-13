@@ -78,6 +78,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    // Displays information about the selected unit
     public void DisplayUnitInfo()
     {
         Unit unit = Player.selectedUnit;
