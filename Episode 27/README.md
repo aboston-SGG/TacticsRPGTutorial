@@ -1,6 +1,6 @@
-# Episode 24: Unit Classes
+# Episode 27: Unit Action Menu
 
-In this video we add classes to help our units stand out from each other and give them specialized roles on the battlefield.
+In this video we add an action menu to give us better control over our units.
 
 ## New Scripts
 - UnitClass.cs

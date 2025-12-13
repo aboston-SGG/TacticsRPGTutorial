@@ -1,0 +1,139 @@
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class UIManager : MonoBehaviour
+{
+    public InputSystem_Actions inputActions;
+    public CanvasGroup managerMenu;
+    public CanvasGroup unitActionMenu;
+
+    [Header("Unit Info Panel")]
+    public CanvasGroup unitInfoPanel;
+    public TextMeshProUGUI unitNameText;
+    public TextMeshProUGUI unitLevelText;
+    public TextMeshProUGUI unitHealthText;
+    public TextMeshProUGUI unitItemText;
+    public Image unitHealthBar;
+    public Image unitPortrait;
+
+    [Header("Hover Info Panel")]
+    public CanvasGroup hoverInfoPanel;
+    public TextMeshProUGUI hoverNameText;
+    public TextMeshProUGUI hoverLevelText;
+    public Image hoverHealthBar;
+    public Image hoverPortrait;
+
+    // Awake is called when the script instance is being loaded
+    private void Awake()
+    {
+        inputActions = new InputSystem_Actions();
+        inputActions.Enable();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (inputActions.Player.ManagerMenu.WasPressedThisFrame())
+        {
+            if (CheckIfMenuOpen(managerMenu))
+            {
+                CloseMenu(managerMenu);
+            }
+            else
+            {
+                OpenMenu(managerMenu);
+            }
+        }
+
+        if(Player.selectedUnit && !CheckIfMenuOpen(managerMenu))
+        {
+            if(!Player.selectedUnit.isMoving)
+            {
+                OpenMenu(unitActionMenu);
+            }
+            else
+            {
+                CloseMenu(unitActionMenu);
+            }
+
+            OpenMenu(unitInfoPanel);
+            DisplayUnitInfo();
+        }
+        else
+        {
+            CloseMenu(unitInfoPanel);
+            CloseMenu(unitActionMenu);
+        }
+
+        if (Player.hoverUnit && !CheckIfMenuOpen(managerMenu) && Player.hoverUnit != Player.selectedUnit)
+        {
+            OpenMenu(hoverInfoPanel);
+            DisplayHoverInfo();
+        }
+        else
+        {
+            CloseMenu(hoverInfoPanel);
+        }
+    }
+
+    // Makes a target menu invisible and not interactable
+    public void CloseMenu(CanvasGroup menu)
+    {
+        menu.alpha = 0;
+        menu.interactable = false;
+        menu.blocksRaycasts = false;
+    }
+
+    // Makes a target menu visible and interactable
+    public void OpenMenu(CanvasGroup menu)
+    {
+        menu.alpha = 1;
+        menu.interactable = true;
+        menu.blocksRaycasts = true;
+    }
+
+    // Checks if a given menu is open or closed
+    public bool CheckIfMenuOpen(CanvasGroup menu)
+    {
+        if(menu.alpha == 1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    // Displays the selected unit's information on the UI panel
+    public void DisplayUnitInfo()
+    {
+        Unit unit = Player.selectedUnit;
+        unitNameText.text = unit.unitName;
+        unitPortrait.sprite = unit.unitPortrait;
+        unitLevelText.text = $"Lvl {unit.level}";
+        unitHealthText.text = $"{unit.health} / {unit.maxHealth}";
+        unitHealthBar.fillAmount = (float)unit.health / unit.maxHealth;
+    }
+
+    // Called when the Wait button is pressed
+    public void WaitButton()
+    {
+        if (Player.selectedUnit)
+        {
+            Player.selectedUnit.ExpendUnit();
+            Player.selectedUnit = null;
+        }
+    }
+
+    // Displays the hovered unit's information on the UI panel
+    public void DisplayHoverInfo()
+    {
+        Unit hoverUnit = Player.hoverUnit;
+        hoverNameText.text = hoverUnit.unitName;
+        hoverPortrait.sprite = hoverUnit.unitPortrait;
+        hoverLevelText.text = $"Lvl {hoverUnit.level}";
+        hoverHealthBar.fillAmount = (float)hoverUnit.health / hoverUnit.maxHealth;
+    }
+}
