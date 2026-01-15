@@ -1,4 +1,4 @@
-# Episode 34: Equipping Weapons
+# Episode 35: Equipping Weapons
 
 In this video we make it so that our units can equip weapons.
 
