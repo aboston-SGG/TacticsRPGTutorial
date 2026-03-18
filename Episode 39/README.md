@@ -1,4 +1,4 @@
-# Episode 38: Accuracy
+# Episode 38: Weapon Types
 
 In this video we add some diversity to our weapons by giving them types.
 
